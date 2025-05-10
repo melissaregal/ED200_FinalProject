@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+    
+    <meta charset="UTF-8">
+    <title>To-Do List </title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="titleBar">
+        <span>.........................................................................................To-Do Widget.........................................................................................</span>
+      </div>
+
+    <div id = "mainContent">
+    <!--close btn icon-->
+    <button id="closeBtn">
+        <span class="material-symbols-outlined">cancel</span>
+    </button>
+    <button id = "saveBtn">Save</button>
+
+    <h2>
+        To-Do List
+    </h2>
+
+    <h3>Weather</h3>
+    
+    <p id="weatherResult"></p>
+    <br>
+    <input id = "taskInput" type = "text" placeholder="Add a task">
+    
+
+    <button onclick="addTask()">Add</button>
+    <br>
+    <ul id = "taskList"></ul>
+   
+    <p id = "task"></p>
+    <script src = "renderer.js"></script>
+    <br>
+
+
+    <label for="dailyPrompt">Choose A Journal Prompt:</label>
+    <br>
+    <select id = "dailyPrompt">
+        <option disabled selected>Select a prompt</option>
+    </select>
+    <br>
+    <br>
+    <textarea id="journalEntry" rows="4" placeholder="Write your reflection..."></textarea>
+    <br>
+    <button id="saveJournalBtn">Save Journal Entry</button>
+    <br>
+    <ul id="journalList"></ul>
+    <br></div>
+
+    
+    <!-- side bar for journals-->
+    <div id="sidebar">
+       
+        <div id="sidebarContent">
+            <br>
+          <h3>Journal Entries</h3>
+          <ul id="sidebarJournalList"></ul><button id="toggleSidebar"> => </button>
+        </div>
+      </div>
+
+</body>
+
+</html>
+
+
