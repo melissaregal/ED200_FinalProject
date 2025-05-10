@@ -27,15 +27,16 @@ npm start
 File Structures 
 
 todo-widget/
-├── index.html            # Main UI
-├── style.css             # Styling (Pixel-like aesthetic)
-├── main.js               # Electron window and IPC setup
-├── preload.js            # Secure context bridge for renderer
-├── renderer.js           # All frontend logic (tasks, prompts, weather)
-├── tasks.json            # Local data storage for to-do tasks
-├── journal.json          # Local data storage for journal entries
-├── package.json          # Metadata and dependencies
-└── package-lock.json     # Version lock file
+├── index.html           # Main HTML structure
+├── style.css            # CSS styling (cute, pixel-style theme)
+├── main.js              # Electron window + IPC communication
+├── preload.js           # Context bridge for secure renderer access
+├── renderer.js          # Frontend logic: tasks, prompts, weather
+├── tasks.json           # Local storage for task list
+├── journal.json         # Local storage for journal entries
+├── package.json         # Project metadata and Electron dependency
+└── package-lock.json    # Dependency lock file
+
 
 
 # Planned Improvements 
